@@ -1,6 +1,9 @@
 const imageUpload = document.getElementById('image-upload');
 const uploadedImage = document.getElementById('uploaded-image');
+const downloadBtn = document.getElementById('download-btn');
+const captureArea = document.getElementById('capture-area');
 
+// Subir imagen del usuario
 imageUpload.addEventListener('change', function () {
   const file = this.files[0];
   if (file && file.type.startsWith('image/')) {
@@ -12,6 +15,7 @@ imageUpload.addEventListener('change', function () {
   }
 });
 
+// Hacer imagen arrastrable y redimensionable
 interact('#uploaded-image')
   .draggable({
     onmove: event => {
@@ -45,9 +49,8 @@ interact('#uploaded-image')
     target.setAttribute('data-y', y);
   });
 
-document.getElementById("download-btn").addEventListener("click", function () {
-  const captureArea = document.getElementById("capture-area");
-
+// Descargar la camiseta con el diseño
+downloadBtn.addEventListener("click", function () {
   html2canvas(captureArea, {
     backgroundColor: null
   }).then(canvas => {
