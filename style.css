@@ -6,7 +6,7 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url('Mesa con cafe.png') center center no-repeat;
+  background: url('https://raw.githubusercontent.com/bryanrigs93-art/camisetaapp/refs/heads/main/Mesa%20con%20cafe.png') center center no-repeat;
   background-size: cover;
   z-index: -2;
 }
@@ -82,22 +82,12 @@ body {
 .shirt-area {
   position: relative;
   display: inline-block;
-  width: 260px;    /* Ajusta al tamaño real de tu camiseta */
-  height: 320px;
+}
 
-  /* Imagen de la camiseta como fondo */
-  background: url("tshirt-white.png") no-repeat center;
-  background-size: contain;
-
-  /* Máscara para recortar a la forma de la camiseta */
-  -webkit-mask-image: url("tshirt-white.png");
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
-  mask-image: url("tshirt-white.png");
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
+.shirt {
+  width: 260px;
+  display: block;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
 }
 
 #uploaded-image {
