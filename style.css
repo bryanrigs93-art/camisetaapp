@@ -1,0 +1,129 @@
+/* Fondo completo con imagen de la mesa */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://raw.githubusercontent.com/bryanrigs93-art/camisetaapp/refs/heads/main/Mesa%20con%20cafe.png') center center no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 40px;
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  width: 360px;
+  background: rgba(255, 230, 240, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+.background-frame {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.background-mesa {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-top: -50px;
+}
+
+.logo {
+  width: 200px;
+  margin: -60px auto 10px;
+  animation: heartbeat 2s infinite;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
+.title {
+  font-size: 24px;
+  color: #e91e63;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+/* CONTENEDOR A CAPTURAR CON CAMISETA Y DISEÑO */
+.shirt-area {
+  position: relative;
+  display: inline-block;
+}
+
+.shirt {
+  width: 260px;
+  display: block;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+}
+
+#uploaded-image {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  width: 90px;
+  transform: translateX(-50%);
+  opacity: 0.95;
+  cursor: move;
+}
+
+input[type="file"] {
+  margin-top: 20px;
+}
+
+.note {
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+  margin: 12px 0 10px;
+}
+
+#download-btn {
+  margin: 10px auto 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#download-btn:hover {
+  background-color: #c2185b;
+}

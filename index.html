@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App de Sublimación</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="background-frame">
+      <img src="https://raw.githubusercontent.com/bryanrigs93-art/camisetaapp/refs/heads/main/Mesa%20con%20cafe.png" alt="Mesa" class="background-mesa" />
+    </div>
+
+    <img src="https://raw.githubusercontent.com/bryanrigs93-art/camisetaapp/refs/heads/main/MI%20REGALO%20PERFECTO.png" alt="Logo" class="logo" />
+
+    <h1 class="title">Sublima tu Camiseta Blanca</h1>
+    <p class="subtitle">👕 <em>Sube tu diseño y ajústalo sobre la camiseta.</em></p>
+
+    <!-- CONTENEDOR PARA CAPTURAR CAMISETA + DISEÑO -->
+    <div class="shirt-area" id="capture-area">
+      <img src="https://raw.githubusercontent.com/bryanrigs93-art/camisetaapp/main/tshirt-white.png" alt="Camiseta Blanca" class="shirt" />
+      <img id="uploaded-image" alt="Tu diseño" />
+    </div>
+
+    <input type="file" id="image-upload" accept="image/*" />
+    <p class="note">Puedes arrastrar y ajustar el tamaño del diseño.</p>
+    <button id="download-btn">📥 Descargar mi diseño</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
